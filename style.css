@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  width: 800px;
+  line-height: 1.2;
+  margin: 130px auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+.text {
+  background-color: #1c1938;
+  color: whitesmoke;
+  padding: 40px 70px 40px 40px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.text p {
+  font-size: smaller;
+  margin-top: 40px;
+}
+
+.tex {
+  width: 230px;
+}
+.stat-img {
+  height: 318px;
+  width: 310px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px) {
+  .container {
+    width: 300px;
+    margin: 100px auto;
+  }
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .text {
+    border-top-left-radius: 0;
+    border-end-end-radius: 20px;
+    text-align: center;
+    padding: 40px 110px 40px 110px;
+  }
+  .stat {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stat-img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    height: 300px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 100px;
+    margin: 100px auto;
+  }
+  .flex {
+    flex-direction: column-reverse;
+  }
+  .text {
+    border-top-left-radius: 0;
+    border-end-end-radius: 20px;
+    text-align: center;
+   padding: 20px 60px 30px 60px;
+  }
+  .stat {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .stat-img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    height: 250px;
+    width: 350px;
+  }
+}
